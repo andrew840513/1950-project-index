@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Media Queries  */
+.member h3, .member p{
+	text-align:center;
+}
+figure img{
+	width:250px;
+	display: block;
+    margin: auto;
+}
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 1050px) {}
+main .columns{
+	margin-left:0%;
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	figure img{
+		width:250px;
+	}
+}
