@@ -1,6 +1,28 @@
 @charset "UTF-8";
 /* CSS Document */
 /* Media Queries  */
+body{
+	background:#D0D0D0;
+}
+header{
+	height:100px;
+}
+header, header *{
+	background:#2FE5FF;
+}
+header #title{
+	padding-left:20px;
+	font-size:3em;
+	display:block;
+	margin:auto;
+	text-align:center;
+}
+main{
+	background:#fff;
+}
+main h2{
+	margin-left:10px;
+}
 nav{
 	text-align:right;
 }
@@ -12,11 +34,14 @@ nav{
 }
 .nav ul{
 	display:none;
+	position:absolute;
+	right:2px;
 }
 .nav li{
 	list-style:none;
-	float:right;
+	float:left;
 	width:100%;
+	text-align:center;
 }
 .member h3, .member p{
 	text-align:center;
@@ -25,6 +50,9 @@ figure img{
 	width:250px;
 	display: block;
     margin: auto;
+}
+footer{
+	background:#9DC2FF;
 }
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 1050px) {
@@ -42,9 +70,8 @@ figure img{
 		float:right;
 	}
 	.nav li{
-		width:150px;
+		width:100px;
 		float:left;
-	}
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {

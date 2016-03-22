@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(){
     $("#menu").click(function(){
-        $("#nav_menu").slideToggle("fast");
+        $("#nav_menu").animate({width:'toggle'},100);
     });
 });
 
