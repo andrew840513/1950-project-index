@@ -9,8 +9,6 @@
 * 
 */
 
-
-
 /* Grid - Starts with Mobile-First */
 .container {
   position: relative;
@@ -74,8 +72,6 @@ body {
 p {
   margin-top: 0; }
 
-
-
 /* Lists  */
 ul {
   list-style: circle inside; }
@@ -93,8 +89,6 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
-
-
 /* Tables  */
 th,
 td {
@@ -107,9 +101,6 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
-
-
-
 
 /* Utilities  */
 .u-full-width {
