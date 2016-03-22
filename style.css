@@ -72,6 +72,7 @@ footer{
 	.nav li{
 		width:100px;
 		float:left;
+	}
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
