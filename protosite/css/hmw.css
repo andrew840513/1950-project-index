@@ -28,7 +28,20 @@ body {
     font-family: 'Source Sans Pro';
     font-weight: 300;
 }
-
+#nav_container{
+	background:#000;
+}
+#search
+{
+	text-align:right;
+	padding:15px 5px 0 0px;
+}
+#searchbar
+{
+	width:90%;
+	margin-bottom:20px;
+}
+	
 #page {
     max-width: 1000px;
     margin: 10px auto;
@@ -82,6 +95,7 @@ h1 {
     color: #666;
     text-shadow: 0.05em 0.075em 0 #000;
     line-height:40px;
+	text-align:center;
 }
 
 h2 {
@@ -96,7 +110,11 @@ h3 {
     padding: 20px 25px 0px 10px;
     margin:0;
 }
-
+#menu{
+	background-color:black; 
+	text-align:center;
+	padding:5px;
+}
 p {
     padding: 10px 10px;
     text-align:justify;
@@ -134,8 +152,26 @@ aside {
     position: relative;
     border:solid 1px silver;
 }
+#accordion{
+	margin:0px;
+}
 aside li{
 	list-style:none;
+}
+#calender{
+	background-color:black; 
+	text-align:center;
+	padding:5px
+}
+#calender_img{
+	width:50%;
+	display:block;
+	margin:auto;
+}
+#resources{
+	background-color:black; 
+	text-align:center;
+	padding:5px;
 }
 div.thirds {
     padding-bottom: 50px;
@@ -163,6 +199,7 @@ footer {
     color: #333;
     padding: 0px 0 0 0px;
     height: 100px;
+	text-align:center;
 }
 
 #navbox{
@@ -292,3 +329,12 @@ nav > ul > li > div ul > li {
 	nav > ul > li > div ul > li:hover > a {
 		/*background-color: rgba( 255, 255, 255, 0.1);*/
 	}
+@media (min-width: 700px) {
+	#calender_img{
+		width:100%;
+	}
+	#searchbar{
+		width:60%;
+		min-width:70px;
+	}
+}
