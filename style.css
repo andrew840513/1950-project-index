@@ -31,6 +31,7 @@ nav{
 }
 #menu{
 	text-decoration:none;
+	margin-right:10px;
 	color:#000;
 	font-size:2em;
 	display:block;
