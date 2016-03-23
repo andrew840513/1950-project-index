@@ -10,8 +10,7 @@
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/grid.css" />
 <link rel="stylesheet" href="css/hmw.css" />
-<link rel="stylesheet" href="css/nav.css" />
-<link rel="stylesheet" media="print" href="css/print.css" />
+<link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -20,16 +19,11 @@
 <body>
 <div id="page" class="container">
   <div class="row">
-    <div class="twelve columns">
-      <div style="text-align:center;">
         <h1 id="logo">Comp 1950</h1>
-      </div>
-    </div>
   </div>
-  <div class="row" style="background-color:black;">
-    <div class="nine columns" style="background-color:black;height:">
+  <div class="row" id="nav_container">
       <!--This is include file for the top menu-->
-      <nav>
+      <nav class="nine columns">
         <ul>
           <li> <a href="index.html">Home</a> </li>
           <li> <a href="history.html">History</a> </li>
@@ -46,28 +40,21 @@
           <li> <a href="contact.html">Contact</a> </li>
         </ul>
       </nav>
-    </div>
-    <div class="three columns">
-      <div style="text-align:right;padding:15px 5px 0 0px; background-color:black">
+      <div class="three columns" id="search">
         <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
-          <input type="text" name="fname" style="width:120px">
+          <input type="text" name="fname" id="searchbar">
           <input type="submit" value="Go">
         </form>
       </div>
-    </div>
   </div>
   <div id="head"> Place holder of slide, banner and etc </div>
-  <section>
-    <h2 style="display:none;">hidden</h2>
-    <div class="row">
-      <article class="twelve columns">
+      <article class="row">
         <h3>
           <!--This is include file for greetings and stuff -->
           <!--#config timefmt="%A , %B %d , %Y" -->
           <!--#echo var="DATE_LOCAL"-->
         </h3>
       </article>
-    </div>
     <div style="clear:both"></div>
     <div class="row">
       <div class="nine columns">
@@ -108,9 +95,10 @@
             <h3 id="how-to-ftp-to-your-account">How to FTP to your account</h3>
             <p>In order to log into your FTP account, you will need:</p>
             <div class="highlight">
-              <pre><code class="language-html" data-lang="html">Hostname: thenet.ca
-							Username: {student-account}@thenet.ca
-							Password: {whatever you create}</code></pre>
+              <pre><code class="language-html" data-lang="html">
+Hostname: thenet.ca
+  Username: {student-account}@thenet.ca
+  Password: {whatever you create}</code></pre>
             </div>
             <p>Please take note that your username <em>must</em> end in <strong>@thenet.ca</strong> for it to work.</p>
           </div>
@@ -123,8 +111,8 @@
       </div>
       <div class="three columns">
 <aside>
-	<h3 style="background-color:black; text-align:center;padding:5px">Menu</h3>
-	<div id="accordion" style="margin:0px">
+	<h3 id="menu">Menu</h3>
+	<div id="accordion">
         <h3><a href="/outline/">Outline</a></h3>
         <div>
             <p>Course outline</p>
@@ -155,26 +143,21 @@
 	</div>
 </aside>
         <aside>
-          <h3 style="background-color:black; text-align:center;padding:5px">Course Calender</h3>
-          <img src="calendar.png" alt="calendar" style="width:170px;height:110px" /> </aside>
+          <h3 id="calender">Course Calender</h3>
+          <img src="calendar.png" alt="calendar" id="calender_img"/> </aside>
         <aside>
-          <h3 style="background-color:black; text-align:center;padding:5px">Resources</h3>
+          <h3 id="resources" style="">Resources</h3>
           <br/>
           <a href="#">CSS reference</a> <br/>
           <a href="#">HTML 5</a> <br/>
         </aside>
       </div>
     </div>
-    <div class="row">
       <footer class="twelve columns">
-        <div style="text-align:center;">
           <!--This is include file for the footer-->
           <a href="http://validator.w3.org/check?uri=referer" style="font-weight:bold; color:black">HTML Validator</a>| <a href="sitemap.html">Sitemap</a>|
-          &copy;Copy right 
-        </div>
+          &copy;Copy right
       </footer>
-    </div>
-  </section>
 </div>
 </body>
 </html>
