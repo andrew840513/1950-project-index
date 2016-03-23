@@ -23,6 +23,9 @@ main{
 main h2{
 	margin-left:10px;
 }
+main#rationale{
+	padding:0 20px 0;
+}
 nav{
 	text-align:right;
 }
