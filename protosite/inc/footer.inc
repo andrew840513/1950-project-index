@@ -1,0 +1,1 @@
+ <a href="http://validator.w3.org/check?uri=referer" style="font-weight:bold; color:black">HTML Validator</a>

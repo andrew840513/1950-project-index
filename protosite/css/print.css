@@ -1,0 +1,38 @@
+/* Hide everything unneeded */
+
+header h1, header nav, footer, img, aside , nav {display: none}
+
+body, #content, #main, header, article, section  {
+   float: none;
+   width: auto;
+   margin: 0;
+   padding: 0;
+   background: none;
+}
+
+body, #content, #main, article, section {
+	color: black;
+	font: 12pt/15pt Georgia, "Times New Roman", Serif;
+}
+	
+h1, h2, h3, h4, h5, h6, header {
+    font-family: Arial, Verdana, Helvetica, Sans-serif;
+    border:0px;
+}
+
+#logo {display:none;
+}
+
+h1 {font-size: 24pt}
+h2 {font-size: 14pt; margin-top: 25px}
+
+
+a:link, a:visited {
+	color: #309;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+
