@@ -142,6 +142,9 @@ aside {
     position: relative;
     border:solid 1px silver;
 }
+#menu{
+	color:#fff;
+}
 #accordion{
 	margin:0px;
 }
