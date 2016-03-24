@@ -138,12 +138,10 @@ article {
 
 aside {
     background: #fff;
+	color:#fff;
     line-height: 16px;
     position: relative;
     border:solid 1px silver;
-}
-#menu{
-	color:#fff;
 }
 #accordion{
 	margin:0px;
