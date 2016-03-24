@@ -137,8 +137,7 @@ article {
 }
 
 aside {
-    background-color: white;
-    color: white;
+    background: #fff;
     line-height: 16px;
     position: relative;
     border:solid 1px silver;
