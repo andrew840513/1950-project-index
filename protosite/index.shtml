@@ -5,12 +5,11 @@
 <meta name="description" content="Project">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
 <title>Project - Student friendly Website</title>
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/grid.css" />
 <link rel="stylesheet" href="css/hmw.css" />
-<link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -32,20 +31,10 @@
           <li> <a href="index.shtml">Home</a> </li>
           <li> <a href="about.html">About</a> </li>
           <li> <a href="beers.html">Beers</a> </li>
-          <li><a href="/kzarrehparvar">Homeworks <span class="caret"></span></a>
-              <div>
-              		<ul>
-                       <li><a href="http://students.thenet.ca/kzarrehparvar/">Homework 1</a></li>
-                       <li><a href="http://students.thenet.ca/kzarrehparvar/homework2">Homework 2</a></li>
-                       <li><a href="#">Homework 3</a></li>
-                   </ul>
-              </div>
-           </li>
-          <li> <a href="contact.html">Contact</a> </li>
           <li><a href="#">Blog</a></li>
+          <li> <a href="contact.html">Contact</a> </li>
         </ul>
       </nav>
-      
   </div>
   <div id="head"> Place holder of slide, banner and etc </div>
       <article class="row">
@@ -56,26 +45,30 @@
         </h3>
       </article>
     <div style="clear:both"></div>
-    <div class="row">
     <div class="three columns right_menu">
-	<aside>
+	
+    <aside>
 	<h3 id="menu">Menu</h3>
 	<div id="accordion">
+    
         <h3><a href="/outline/">Outline</a></h3>
-        <div>
+        <div id="outline">
             <p>Course outline</p>
         </div>
+        
         <h3>Project</h3>
-        <div>
+        <div id="project">
             <a href="/project/answers/">Project Description</a>
             <a href="/project/answers/">Project Answers</a>
         </div>
+        
         <h3><a href="/studentpages/">Student Pages</a></h3>
-        <div>
+        <div id="student_page">
             <p>FTP information</p>
         </div>
+        
         <h3>Weekly Lectures</h3>
-        <div>
+        <div id="lectures">
         	<ul>
                 <li><a href="/week01/">Week 1</a></li>
                 <li><a href="/week02/">Week 2</a></li>
@@ -87,18 +80,24 @@
                 <li><a href="/week08/">Week 8</a></li>
                 <li><a href="/week09/">Week 9</a></li>
             </ul>
-        </div>
-	</div>
+        </div><!--#lectures -->
+        
+	</div><!--#accordion-->
 </aside>
 </div>
-      <div >
+      <div id="content_wrapper">
         <div class="nine columns" id="tabs">
           <ul>
             <li> <a href="#tabs-1">Content</a></li>
             <li> <a href="#tabs-2">Lab</a> </li>
-            <li> <a href="#tabs-3">Assignment</a> </li>
+            <li> <a href="#tabs-3">Assignment</a></li>
           </ul>
           <div id="tabs-1">
+          
+          <!--This is content tab for lecture -->
+          
+          
+          
             <h3> <a class="icon fa-home">Content</a> </h3>
             <p>Week 1: Getting started, introductions, standards, tools</p>
             <h2 id="agenda">Agenda</h2>
@@ -110,8 +109,19 @@
               <li>Student Pages setup</li>
               <li>Homework</li>
             </ul>
-          </div>
+            
+            
+            
+          <!--End of content tab -->
+          
+          </div><!--#tab1-->
+          
           <div id="tabs-2">
+          
+          <!--This lab tab for in class lab, or practice -->
+          
+          
+          
             <h3> <a class="icon fa-home">Lab</a> </h3>
             <h2>Student Pages</h2>
             <p>All your homework <em>must</em> reside within the student pages provided for this course.  This is so the instructor can track your progress and examine any code that may be server-processed.</p>
@@ -135,14 +145,30 @@ Hostname: thenet.ca
   Password: {whatever you create}</code></pre>
             </div>
             <p>Please take note that your username <em>must</em> end in <strong>@thenet.ca</strong> for it to work.</p>
-          </div>
+            
+            
+            
+            <!--End of lab tab -->
+            
+          </div><!--#tab-2 -->
+          
           <div id="tabs-3">
+          
+          <!--This is Homework tab for reminder of homework, or exam notice -->
+          
+          
+          
             <h3> <a class="icon fa-home">Assignment</a></h3>
             <p> Homework will <em>ALWAYS</em> be due at 12:00pm Noon the day before the next class.  For those who are challenged by calendars, this means that you must have your homework uploaded to your Student Page by Noon on Mondays. </p>
             <p>If you do not have your homework up in time, it will be marked as incomplete and you will receive no feedback.  However, you are encouraged to complete your homework anyway, as you will receive a mark at the end of the term for the entirety of your assignments.</p>
-          </div>
-        </div>
-      </div>
+            
+            
+            <!--End of homework tab -->
+            
+          </div><!--#tab-3 -->
+        </div><!--#tabs -->
+      </div><!--#content_wrapper -->
+      
       <div class="three columns right_menu">
         <aside>
           <h3 id="calender">Course Calender</h3>
@@ -153,13 +179,15 @@ Hostname: thenet.ca
           <a href="#">CSS reference</a> <br/>
           <a href="#">HTML 5</a> <br/>
         </aside>
-      </div>
-    </div>
+      </div><!--.right_menu -->
+      
       <footer class="twelve columns">
           <!--This is include file for the footer-->
           <a href="http://validator.w3.org/check?uri=referer" style="font-weight:bold; color:black">HTML Validator</a>| <a href="sitemap.html">Sitemap</a>|
           &copy;Copy right
       </footer>
-</div>
+      
+</div><!--#page.container -->
+
 </body>
 </html>
