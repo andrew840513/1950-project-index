@@ -20,13 +20,17 @@
 <div id="page" class="container">
   <div class="row">
         <h1 id="logo">Comp 1950</h1>
+        <form name="myForm" action="#" method="post" id="search" class="four columns">
+          <input type="text" name="fname" id="searchbar">
+          <input type="submit" value="Go">
+        </form>
   </div>
   <div class="row" id="nav_container">
       <!--This is include file for the top menu-->
-      <nav class="nine columns">
+      <nav>
         <ul>
-          <li> <a href="index.html">Home</a> </li>
-          <li> <a href="history.html">History</a> </li>
+          <li> <a href="index.shtml">Home</a> </li>
+          <li> <a href="about.html">About</a> </li>
           <li> <a href="beers.html">Beers</a> </li>
           <li><a href="/kzarrehparvar">Homeworks <span class="caret"></span></a>
               <div>
@@ -38,14 +42,10 @@
               </div>
            </li>
           <li> <a href="contact.html">Contact</a> </li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </nav>
-      <div class="three columns" id="search">
-        <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
-          <input type="text" name="fname" id="searchbar">
-          <input type="submit" value="Go">
-        </form>
-      </div>
+      
   </div>
   <div id="head"> Place holder of slide, banner and etc </div>
       <article class="row">
@@ -57,10 +57,44 @@
       </article>
     <div style="clear:both"></div>
     <div class="row">
-      <div class="nine columns">
-        <div id="tabs">
+    <div class="three columns right_menu">
+	<aside>
+	<h3 id="menu">Menu</h3>
+	<div id="accordion">
+        <h3><a href="/outline/">Outline</a></h3>
+        <div>
+            <p>Course outline</p>
+        </div>
+        <h3>Project</h3>
+        <div>
+            <a href="/project/answers/">Project Description</a>
+            <a href="/project/answers/">Project Answers</a>
+        </div>
+        <h3><a href="/studentpages/">Student Pages</a></h3>
+        <div>
+            <p>FTP information</p>
+        </div>
+        <h3>Weekly Lectures</h3>
+        <div>
+        	<ul>
+                <li><a href="/week01/">Week 1</a></li>
+                <li><a href="/week02/">Week 2</a></li>
+                <li><a href="/week03/">Week 3</a></li>
+                <li><a href="/week04/">Week 4</a></li>
+                <li><a href="/week05/">Week 5</a></li>
+                <li><a href="/week06/">Week 6</a></li>
+                <li><a href="/week07/">Week 7</a></li>
+                <li><a href="/week08/">Week 8</a></li>
+                <li><a href="/week09/">Week 9</a></li>
+            </ul>
+        </div>
+	</div>
+</aside>
+</div>
+      <div >
+        <div class="nine columns" id="tabs">
           <ul>
-            <li> <a href="#tabs-1">Content</a> </li>
+            <li> <a href="#tabs-1">Content</a></li>
             <li> <a href="#tabs-2">Lab</a> </li>
             <li> <a href="#tabs-3">Assignment</a> </li>
           </ul>
@@ -109,39 +143,7 @@ Hostname: thenet.ca
           </div>
         </div>
       </div>
-      <div class="three columns">
-<aside>
-	<h3 id="menu">Menu</h3>
-	<div id="accordion">
-        <h3><a href="/outline/">Outline</a></h3>
-        <div>
-            <p>Course outline</p>
-        </div>
-        <h3>Project</h3>
-        <div>
-            <a href="/project/answers/">Project Description</a>
-            <a href="/project/answers/">Project Answers</a>
-        </div>
-        <h3><a href="/studentpages/">Student Pages</a></h3>
-        <div>
-            <p>FTP information</p>
-        </div>
-        <h3>Weekly Lectures</h3>
-        <div>
-        	<ul>
-                <li><a href="/week01/">Week 1</a></li>
-                <li><a href="/week02/">Week 2</a></li>
-                <li><a href="/week03/">Week 3</a></li>
-                <li><a href="/week04/">Week 4</a></li>
-                <li><a href="/week05/">Week 5</a></li>
-                <li><a href="/week06/">Week 6</a></li>
-                <li><a href="/week07/">Week 7</a></li>
-                <li><a href="/week08/">Week 8</a></li>
-                <li><a href="/week09/">Week 9</a></li>
-            </ul>
-        </div>
-	</div>
-</aside>
+      <div class="three columns right_menu">
         <aside>
           <h3 id="calender">Course Calender</h3>
           <img src="calendar.png" alt="calendar" id="calender_img"/> </aside>
