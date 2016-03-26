@@ -336,5 +336,8 @@ nav > ul > li > div ul > li {
 	}
 	#search{
 		float:right;
+		position:absolute;
+		top:60px;
+		right:10px;
 	}
 }
