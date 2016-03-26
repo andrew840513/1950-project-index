@@ -31,10 +31,10 @@
       	<a href="#" id="menu_btn">&#9776;</a>
         <ul id="nav_menu">
           <li> <a href="index.shtml">Home</a> </li>
-          <li> <a href="about.html">About</a> </li>
-          <li> <a href="beers.html">Beers</a> </li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Beers</a> </li>
           <li><a href="http://comp1950proto.tumblr.com">Blog</a></li>
-          <li> <a href="contact.html">Contact</a> </li>
+          <li> <a href="#">Contact</a> </li>
         </ul>
       </nav>
   </div>
@@ -55,18 +55,25 @@
     
         <h3><a href="/outline/">Outline</a></h3>
         <div id="outline">
-            <p>Course outline</p>
+        	<ul>
+        		<li><a href="#">Course outline</a></li>
+        	</ul>
         </div>
         
         <h3>Project</h3>
         <div id="project">
-            <a href="/project/answers/">Project Description</a>
-            <a href="/project/answers/">Project Answers</a>
+        	<ul>
+        		<li><a href="#">Project Description</a></li>
+        		<li><a href="#">Project Answers</a></li>
+        	</ul>
         </div>
         
         <h3><a href="/studentpages/">Student Pages</a></h3>
         <div id="student_page">
-            <p>FTP information</p>
+        	<ul>
+        		<li><a href="#">FTP information</a></li>
+        	</ul>
+            
         </div>
         
         <h3>Weekly Lectures</h3>
