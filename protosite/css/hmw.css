@@ -201,7 +201,19 @@ nav {
     width: 100%;
     z-index: 1000;
 }
-
+nav ul{
+	display:none;
+}
+#menu_btn{
+	color:#fff;
+	font-size:2em;
+	text-align:right;
+	display:block;
+	margin-right:10px;
+}
+#menu_btn:hover{
+	text-decoration:none;
+}
 .sidebar-nav ul li {
      display:list-item;
      list-style-type: none;
@@ -319,6 +331,9 @@ nav > ul > li > div ul > li {
 		/*background-color: rgba( 255, 255, 255, 0.1);*/
 	}
 @media (min-width: 800px) {
+	nav ul{
+		display:block;
+	}
 	nav ul, nav li
 	{
 		width: auto;
@@ -339,5 +354,8 @@ nav > ul > li > div ul > li {
 		position:absolute;
 		top:60px;
 		right:10px;
+	}
+	#menu_btn{
+		display:none;
 	}
 }

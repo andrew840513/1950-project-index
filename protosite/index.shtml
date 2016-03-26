@@ -26,12 +26,14 @@
   </div>
   <div class="row" id="nav_container">
       <!--This is include file for the top menu-->
+      
       <nav>
-        <ul>
+      	<a href="#" id="menu_btn">&#9776;</a>
+        <ul id="nav_menu">
           <li> <a href="index.shtml">Home</a> </li>
           <li> <a href="about.html">About</a> </li>
           <li> <a href="beers.html">Beers</a> </li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="http://comp1950proto.tumblr.com">Blog</a></li>
           <li> <a href="contact.html">Contact</a> </li>
         </ul>
       </nav>
